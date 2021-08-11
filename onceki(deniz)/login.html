@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.typekit.net/odt3qye.css">
+    <link rel="stylesheet" href="gorkem/log.css">
+    <link rel="stylesheet" href="https://use.typekit.net/odt3qye.css%22%3E">
+    <style>
+     .pushable {
+    background: rgb(167, 121, 22);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }</style>
+
+    <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  >
+    <div class="flex">
+
+
+
+
+
+        
+    <div class="bg-white h-screen w-7/12 hidden lg:block">
+        
+        <div class="h-screen ">
+            <img class="float-left border-yellow-800 rounded-full border-b-4 border-r-3 border-r-1  bg-yellow-600 w-20 m-8 " src="circlepng.png">
+            <div class="pt-20  clear-right flex-col  items-center justify-center h-screen">
+               
+                   <div class="pt-12 pb-16">
+                           <p class=" text-center"> Mirket ile ilgili bir bilgi bura gelicek,<br> buradaki ornekr</p>
+                    </div>
+
+                <div class="ml-10 flex items-center justify-center">
+                    <div id="1" class="absolute"><img src="oge1.png" width="300px" alt=""></div>
+                    <div id="2" class=""><img src="oge1.png" width="300px" width="" alt=""></div>
+                    <div id="3" class=""><img src="oge1.png" width="300px" alt=""></div>
+                </div> 
+                <div class=" justify-center" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>        
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+   
+
+
+    <div class="bg-white h-screen w-screen lg:w-5/12 flex items-center justify-center hidden lg:flex ">
+        <div style="background-color: #2c2e43 ; box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.2); min-width:350px;max-width:440px" style="min-width:350px;max-width:440px" class=" bg-blue-800 border-b-8 lg:w-1/2 w-8/12 border-gray-900 flex flex-col items-center  justify-center rounded-3xl">
+            <p class="  mb-8 mt-5 text-white text-5xl font-bold">Giriş Yap</p>
+            <input class=" mt-12 h-16 py-2 px-3 w-9/12 rounded-full text-gray-900 leading-tight text-xl  border-b-4 border-gray-500  focus:shadow" id="username" type="email" placeholder="E-mail...">
+            <input class=" mb-6 mt-8 h-16 w-9/12 py-2 px-3  rounded-full  text-gray-900 leading-tight text-xl border-b-4 border-gray-500 focus:shadow"  placeholder="Şifre..." type="password" id="pwd" name="pwd"><br><br>
+            <div class="h-20 mt-8 mr-8   w-8/12 rounded-full m-auto">
+              <button class="pushable rounded-full ">
+                  <span style="background-color:#FFD523;  text-decoration: none;" class="text-black pt-3 pb-4 text-center  text-2xl h-18  rounded-full  front">
+                    Giriş Yap
+                  </span></div>
+            <p class="mb-16 text-white">Kayıtlı bir hesabın yokmu? <a style="text-decoration:underline" class="text-yellow-600" href="">Kayıt Ol</a></p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div  class="bg-gray-300 h-screen w-screen lg:w-5/12 lg:hidden flex flex-col items-center justify-center ">
+
+        <img class="float-left border-yellow-600 rounded-full border-b-4 border-r-3 border-r-1  bg-yellow-300 w-24 m-12 " src="circlepng.png">
+        
+        
+        
+        
+        <div style="background-color: #2c2e43 ; box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.2); min-width:350px;max-width:440px" class=" bg-blue-800 border-b-8 lg:w-1/2 w-8/12 border-gray-900 flex flex-col items-center  justify-center rounded-3xl">
+            <p style="font-family: vag-rundschrift-d,sans-serif;font: weight 10px;font-style: normal;" class="tracking-wide  mb-2 mt-10 text-white text-5xl font-bold">Giriş Yap</p>
+            <input style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius: 30px;" class=" mt-10 mb-2 h-16 py-2 px-3 w-9/12  pl-6  text-gray-900 text-2xl  border-b-8  border-gray-400 leading-tight" id="username" type="email" placeholder="E-Posta...">
+            <input style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius: 30px;" class=" mb-16 mt-12 h-16 w-9/12 py-2 px-3 pl-6 text-2xl border-b-8  border-gray-400   text-gray-900 leading-tight"  placeholder="Şifre..." type="password" id="pwd" name="pwd"><br><br>
+        </div>
+
+
+
+
+        <div style="min-width:350px;max-width:440px" class="mt-3 flex w-9/12 ">
+            <a style="text-decoration:underline" class="mt-12 ml-8 mr-8 w-32 text-2xl text-blue-900" href="">Kayıt ol.</a>
+            
+            <div class="h-20 mt-10 mr-3  w-8/12 rounded-full ">
+                <button class="pushable rounded-full ">
+                <span style="background-color:#FFD523; min-width:100px;max-width:200px ; text-decoration: none;" class="text-black pt-3 pb-4 text-center  text-2xl h-18  rounded-full  front">
+                  Giriş Yap
+                </span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+</body>
+</html>
+<!-- <input style="border-bottom: 12px solid rgba(124, 129, 76, 0.356);" class=" bg-yellow-500 h-20 mt-8 mr-3 w-8/12 pl-6 pr-6 text-2xl  rounded-full border-r-1 border-l-1 border-b-8 border focus:border-blue-400  hover:border-gray-400  " type="submit" value="Giris yap"> -->
