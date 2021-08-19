@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <script src="buttonfonk.js"></script>
   <div class="flex bg-gray-300">
     <div class="hidden w-7/12 h-screen  lg:block">
       <div class="h-screen ">
@@ -56,7 +57,7 @@
 
 
 
-    <div class="flex items-center justify-center hidden w-screen h-screen  lg:w-5/12">
+    <div class="girish flex items-center justify-center hidden w-screen h-screen  lg:w-5/12  lg:flex ">
       <div
         style="background-color: #2c2e43 ; box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.2); min-width:350px;max-width:440px"
         style="min-width:350px;max-width:440px"
@@ -75,13 +76,18 @@
               Giriş Yap
             </span>
         </div>
-        <p class="mb-16 text-white">Kayıtlı bir hesabın yokmu? <a style="text-decoration:underline"
-            class="text-yellow-600" href="">Kayıt Ol</a></p>
+        <p class="mb-16 text-white">Kayıtlı bir hesabın yokmu? <button style="text-decoration:underline" class="text-yellow-600" onclick="giris_yap()" >Kayıt Ol</button></p>
       </div>
     </div>
 
 
-    <div class="flex items-center justify-center hidden w-screen h-screen lg:w-5/12 lg:flex ">
+
+
+
+
+
+
+    <div class="kayit flex items-center justify-center hidden w-screen h-screen lg:w-5/12 ">
       <div
         style="background-color: #2c2e43 ; box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.2); min-width:350px;max-width:440px"
         style="min-width:350px;max-width:440px"
@@ -105,10 +111,13 @@
               Giriş Yap
             </span>
         </div>
-        <p class="mt-1 mb-12 text-white">Zaten bir hesabın var mı? <a style="text-decoration:underline"
-            class="text-yellow-600 " href="">Giriş Yap</a></p>
+        <p class="mt-1 mb-12 text-white">Zaten bir hesabın var mı? <button style="text-decoration:underline"
+            class="text-yellow-600 " onclick="kayit_yap()">Giriş Yap</button></p>
       </div>
     </div>
+
+
+    
 
   </div>
 
@@ -118,7 +127,7 @@
   <div>
 
 
-    <div class="flex flex-col items-center justify-center hidden w-screen h-screen bg-gray-300 lg:w-5/12 lg:hidden ">
+    <div class="kayitphone flex flex-col items-center justify-center  w-screen h-screen bg-gray-300 lg:w-5/12 lg:hidden ">
 
       <img class="float-left w-24 m-12 bg-yellow-300 border-b-4 border-yellow-600 rounded-full border-r-3 border-r-1 "
         src="circlepng.png">
@@ -152,7 +161,7 @@
             </span>
         </div>
 
-        <a style="text-decoration:underline" class="w-32 mt-12 ml-4 mr-6 text-2xl text-blue-900" href="">Giriş Yap.</a>
+        <button style="text-decoration:underline" class="w-32 mt-12 ml-4 mr-6 text-2xl text-blue-900" onclick="kayit_yap()">Giriş Yap.</button>
 
 
 
@@ -164,7 +173,7 @@
 
 
 
-    <div class="flex flex-col items-center justify-center w-screen h-screen bg-gray-300 lg:w-5/12 lg:hidden ">
+    <div class="girishphone flex flex-col items-center justify-center w-screen h-screen bg-gray-300 lg:w-5/12  lg:hidden ">
 
       <img class="float-left w-24 m-12 bg-yellow-300 border-b-4 border-yellow-600 rounded-full border-r-3 border-r-1 "
         src="circlepng.png">
@@ -186,7 +195,7 @@
 
 
       <div style="min-width:350px;max-width:440px" class="flex w-9/12 mt-3 ">
-        <a style="text-decoration:underline" class="w-32 mt-12 ml-8 mr-8 text-2xl text-blue-900" href="">Kayıt ol.</a>
+        <button style="text-decoration:underline" class="w-32 mt-12 ml-8 mr-8 text-2xl text-blue-900" onclick="giris_yap()">Kayıt ol.</button>
 
         <div class="w-8/12 h-20 mt-10 mr-3 rounded-full ">
           <button class="rounded-full pushable ">
